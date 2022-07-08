@@ -1,0 +1,259 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    min-height: 400px;
+}
+
+#animals, #home, #signup {
+    scroll-margin-top: 50px;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #1f2937;
+    display: flex;
+    top: 0;
+}
+
+#nav_container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#nav_container p {
+    transition: transform 250ms;
+}
+
+#nav_container p:hover {
+    color: yellow;
+    transform: translateY(-5px);
+}
+
+#logo_container {
+    color: white;
+    flex-grow: 10;
+    display: flex;
+    margin-right: 50px;
+}
+
+#logo {
+    width: 100px;
+    transition: transform 250ms;
+}
+
+#logo:hover {
+    transform: rotateZ(-10deg);
+}
+
+#menu_container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+#menu_container a {
+    color: white;
+    text-decoration: none;
+    transition: transform 250ms;
+}
+
+#menu_container a:hover {
+    color: yellow;
+    transform: translateY(-5px);
+}
+
+#home {
+    background-color: #1f2937;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;    
+}
+
+#header_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+#button_signup_top {
+    background-color: #3882f6;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    border: 2px #3882f6 solid;
+    border-radius: 5px;
+}
+
+#header_text {
+    color: white;
+}
+
+#header_img {
+    width: 300px;
+}
+
+#sec2_main_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec2_main_text p {
+    font-size: 2em;
+    text-align: center;
+}
+
+#sec2layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#sec2layout p {
+    text-align: center;
+}
+
+#sec2layout img {
+    width: 200px;
+    height: 200px;
+}
+
+#sec3 {
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec3_quote {
+    margin: 5% 20% 5% 20%;
+    font-size: 2em;
+}
+
+#sec3_quote_author {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+#signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec4_layout {
+    color: white;
+    background-color: #3882f6;
+    padding: 20px 70px 20px 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+#call {
+    font-size: 1.5em;
+}
+
+#sec4_button_box {
+    display: flex;
+    align-self: flex-end ;
+    margin-bottom: 15px;
+}
+
+#button_signup_bottom {
+    color: white;
+    background-color: transparent;
+    border: 2px white solid;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    align-self: baseline;
+}
+
+footer {
+    display: flex;
+    height: 80px;
+    background-color: #1f2937;
+}
+
+footer p {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: white;
+}
+
+#button_signup_bottom, #button_signup_top {
+    transition-duration: 0.5s;
+}
+
+#button_signup_top:hover {
+    background-color:yellow;
+    color: #1f2937;
+    transition: 0.7s;
+    border: 2px #1f2937 solid;
+}
+
+#button_signup_bottom:hover {
+    background-color:yellow;
+    color: #1f2937;
+    transition: 0.7s;
+    border: 2px 3882f6 solid;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #home {
+      padding-bottom: 30px;
+    }
+
+    #header_container {
+        padding: 0 20px 0 20px;
+    }
+
+    #latest {
+        padding-bottom: 30px;
+      }
+
+      #sec3_quote {
+        margin: 5% 10% 5% 10%;
+    }
+
+    #header_container {
+        gap: 40px;
+    }
+
+    #sec4_layout {
+        gap: 10px;
+    }
+
+    #button_signup_bottom {
+        padding: 5px 25px 5px 25px;
+    }
+
+  }
